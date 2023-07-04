@@ -1,0 +1,12 @@
+.movie-hero {
+    display: flex;
+}
+
+.movie-detail-wrapper {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.genre-badge {
+    margin-right: 5px;
+}
