@@ -10,7 +10,7 @@ Prerequisites:
 3. SSL certificate and private key in `backend/selfsigned.crt` and `backend/selfsigned.key` respectively
 4. `backend/.env` file containing `JWT_SECRET`, `ENCRYPTION_KEY` for encrypting refresh tokens, and your MySQL `DB_PASSWORD`
 
-To install dependencies, use:
+To install Node packages, use:
 ```shell
 cd frontend && npm install
 cd backend && npm install
