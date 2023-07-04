@@ -59,18 +59,15 @@ const usePerson = ({ personID }) => {
         // const hasExpired = true; // For testing
 
         if (hasExpired) {
-          const response = await fetch(
-            "http://sefdb02.qut.edu.au:3000/user/refresh",
-            {
-              method: "POST",
-              body: JSON.stringify({
-                refreshToken: refreshToken,
-              }),
-              headers: {
-                "Content-Type": "application/json",
-              },
-            }
-          );
+          const response = await fetch("https://localhost:3001/user/refresh", {
+            method: "POST",
+            body: JSON.stringify({
+              refreshToken: refreshToken,
+            }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
           const newTokens = await response.json();
           if (!newTokens.bearerToken || !newTokens.refreshToken) {
             window.localStorage.removeItem("token");
@@ -92,7 +89,7 @@ const usePerson = ({ personID }) => {
 
         // Fetch data from dataEndpoint with updated token
         const dataResponse = await fetch(
-          "http://sefdb02.qut.edu.au:3000/people/" + personID,
+          "https://localhost:3001/people/" + personID,
           {
             method: "GET",
             headers: {

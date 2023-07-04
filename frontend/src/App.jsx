@@ -16,7 +16,7 @@ function App() {
   const navigate = useNavigate();
 
   const logout = () => {
-    fetch("http://sefdb02.qut.edu.au:3000/user/logout", {
+    fetch("https://localhost:3001/user/logout", {
       method: "POST",
       body: JSON.stringify({
         refreshToken: window.localStorage.getItem("refreshToken"),

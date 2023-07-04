@@ -17,7 +17,7 @@ import Background from "../assets/bg_lg.jpg";
 import Footer from "../components/Footer";
 import Tick from "../components/Tick";
 
-const API_URL = "http://sefdb02.qut.edu.au:3000";
+const API_URL = "https://localhost:3001";
 
 const Register = () => {
   const [email, setEmail] = useState("");

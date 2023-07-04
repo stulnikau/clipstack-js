@@ -19,7 +19,7 @@ import "./styles/GoDown.css";
 import { useNavigate } from "react-router";
 import Footer from "../components/Footer";
 
-const API_URL = "http://sefdb02.qut.edu.au:3000/movies/search";
+const API_URL = "https://localhost:3001/movies/search";
 
 const Search = () => {
   const navigate = useNavigate();

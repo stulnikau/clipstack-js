@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
-const API_URL = "http://sefdb02.qut.edu.au:3000";
+const API_URL = "https://localhost:3001";
 
 const Login = () => {
   const navigate = useNavigate();

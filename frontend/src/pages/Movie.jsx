@@ -18,7 +18,7 @@ const useMovie = ({ imdbID }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://sefdb02.qut.edu.au:3000/movies/data/" + imdbID)
+    fetch("https://localhost:3001/movies/data/" + imdbID)
       .then((res) => res.json())
       .then((data) => setMovieData(data))
       .catch((e) => setError(e))
